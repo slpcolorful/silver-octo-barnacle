@@ -1,6 +1,7 @@
 import streamlit as st
 from google import genai
-
+client = genai.Client(api_key=st.secrets["GEMINI_API_KEY"])
+                      
 # 페이지 설정
 st.set_page_config(page_title="언어 검사 분석기", page_icon="📝", layout="centered")
 
